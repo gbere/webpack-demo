@@ -42,6 +42,12 @@ const developmentConfig = () => {
       // unlike default `localhost`.
       host: process.env.HOST, // Defaults to `localhost`
       port: process.env.PORT, // Defaults to 8080
+
+      // overlay: true is equivalent
+      overlay: {
+        errors: true,
+        warnings: true,
+      },
     },
     module: {
       rules: [
